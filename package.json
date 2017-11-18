@@ -1,0 +1,20 @@
+{
+  "name": "electric-desktop",
+  "version": "0.0.1",
+  "description": "Set a wallpaper of your choice for your Ubuntu desktop",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/electron/electron-quick-start",
+  "keywords": [
+    "desktop",
+    "wallpaper",
+    "ubuntu"
+  ],
+  "author": "unjavascripter",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "~1.7.8"
+  }
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Electric Desktop</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="styling.css">
+  </head>
+  <body>
+    <header>
+      <h1>Electric Desktop</h1>
+      <h3>Set a wallpaper of your choice for your Ubuntu desktop</h3>
+    </header>
+
+    <section class="set-by-url">
+      <form id="url-input-form" class="url-input-form">
+        <input type="url" name="url-input" id="url-input" pattern="https?://.+" minlength="12" required autofocus>
+        <button type="submit">Set it!</button>
+      </form>
+    </section>
+
+    <script src="./base64ArrayBuffer.js"></script>
+    <script src="./tostada.js"></script>
+    <script src="./app.js"></script>
+    <script>
+      require('./renderer.js');
+      const app = new App();
+    </script>
+  </body>
+</html>
