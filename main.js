@@ -13,7 +13,7 @@ let mainWindow
 
 function createWindow () {
   // Create the browser window.
-  mainWindow = new BrowserWindow({width: 330, height: 600})
+  mainWindow = new BrowserWindow({width: 330, height: 600, icon: __dirname  + '/w512.png'})
 
   // and load the index.html of the app.
   mainWindow.loadURL(url.format({
@@ -55,6 +55,8 @@ app.on('activate', function () {
     createWindow()
   }
 })
+
+app.getFileIcon('w48.png', (err, icon) => console.log(icon.toDataURL()))
 
 // In this file you can include the rest of your app's specific main process
 // code. You can also put them in separate files and require them here.
